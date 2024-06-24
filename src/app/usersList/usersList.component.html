@@ -1,0 +1,28 @@
+<div>Users List in its own Module now!</div>
+
+<p>
+    <b>Logged User:</b> {{loggedUser.name}}
+</p>
+
+
+<p>
+    <b>DIFFICULT MATH:</b> 1 + 1 = {{1 + 1}}
+</p>
+
+<p>
+    <b>All Users:</b>
+</p>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+
+    <tr *ngFor="let user of allUsers">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+    </tr>
+</table>
